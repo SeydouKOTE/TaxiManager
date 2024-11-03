@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.dlsc.gmapsfx.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.frontendtaxi.MapConducteurController">
+    <children>
+        <GoogleMapView fx:id="mapView" layoutX="14.0" layoutY="14.0" prefHeight="340.0" prefWidth="593.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0" />
+        <Button fx:id="loadButton" layoutX="161.0" layoutY="402.0" mnemonicParsing="false" onAction="#handleLoadButtonAction" text="Load Locations" AnchorPane.bottomAnchor="18.0" AnchorPane.leftAnchor="161.0" />
+        <CheckBox fx:id="ActiverLaVisibilite" layoutX="22.0" layoutY="406.0" mnemonicParsing="false" onAction="#onActiverLaVisibilite" text="Activer la visibilité" AnchorPane.bottomAnchor="22.0" AnchorPane.leftAnchor="22.0" />
+        <AnchorPane fx:id="discution" layoutX="304.0" layoutY="171.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <VBox prefHeight="375.0" prefWidth="374.0" spacing="10" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                <WebView fx:id="messageArea" VBox.vgrow="ALWAYS" />
+                <TextField fx:id="inputField" />
+                <HBox spacing="40.0">
+                    <Button onAction="#sendMessage" text="Envoyer" />
+                    <Button onAction="#sendImage" text="Envoyer une image" />
+               <Button fx:id="Fin" layoutX="108.0" layoutY="10.0" onAction="#handleFinButtonClick" text="Fin" />
+               <Button fx:id="Annuler" layoutX="266.0" layoutY="10.0" onAction="#handleAnnulerButtonClick" text="Annuler" />
+                </HBox>
+            </VBox>
+        </AnchorPane>
+        <ImageView fx:id="ouvrirOufermer" fitHeight="69.0" fitWidth="35.0" onMouseClicked="#handleouvrirOufermerClick" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="249.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="150.0">
+            <image>
+                <Image url="@Images/flecheDroite.png" />
+            </image>
+        </ImageView>
+        <AnchorPane fx:id="paiement" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <VBox layoutX="50.0" layoutY="30.0" spacing="20.0" styleClass="root-pane" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="495.0" styleClass="title-label" text="Choisissez votre plan de paiement" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+
+                <HBox spacing="70.0">
+                    <Button fx:id="monthlyButton" styleClass="payment-button" text="Mensuel - 50 DHS" />
+                    <Button fx:id="quarterlyButton" styleClass="payment-button" text="Trimestriel - 140 DHS" />
+                    <Button fx:id="annualButton" styleClass="payment-button" text="Annuel - 500 DHS" />
+                </HBox>
+
+                <Label fx:id="confirmationLabel" styleClass="confirmation-label" text="" />
+
+                <VBox fx:id="paymentDetails" managed="false" spacing="10.0" visible="false">
+                    <Label styleClass="title-label" text="Entrez vos informations de carte bancaire" />
+                    <TextField fx:id="cardNumberField" promptText="Numéro de carte" />
+                    <TextField fx:id="cardHolderNameField" promptText="Nom du titulaire" />
+                    <TextField fx:id="expiryDateField" promptText="Date d'expiration (MM/AA)" />
+                    <TextField fx:id="cvvField" promptText="CVV" />
+                    <Button onAction="#handlePaymentProcessing" styleClass="payment-button" text="Payer" />
+               <Button fx:id="Abandonner" layoutX="10.0" layoutY="177.0" onAction="#handleAbandonnerButtonClick" styleClass="payment-button" text="Abandonner" />
+                </VBox>
+            </VBox>
+        </AnchorPane>
+    </children>
+</AnchorPane>

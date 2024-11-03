@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.frontendtaxi.InscriptionPassagerController">
+    <children>
+        <AnchorPane prefHeight="400.0" prefWidth="480.0" style="-fx-background-color: #77B5FE;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label layoutX="7.0" layoutY="60.0" prefHeight="33.0" prefWidth="70.0" text="Nom :" wrapText="true">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <Label layoutX="7.0" layoutY="126.0" prefHeight="33.0" prefWidth="90.0" text="Prénom :" wrapText="true">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <Label layoutX="7.0" layoutY="175.0" prefHeight="33.0" prefWidth="119.0" text="Téléphone :" wrapText="true">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <Label layoutX="7.0" layoutY="289.0" prefHeight="33.0" prefWidth="90.0" text="Email :" wrapText="true">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="nomField" layoutX="214.0" layoutY="57.0" prefHeight="33.0" prefWidth="253.0" style="-fx-background-radius: 5;">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="prenomField" layoutX="214.0" layoutY="120.0" prefHeight="33.0" prefWidth="253.0" style="-fx-background-radius: 5;">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="telephoneField" layoutX="214.0" layoutY="172.0" prefHeight="33.0" prefWidth="253.0" style="-fx-background-radius: 5;">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="emailField" layoutX="214.0" layoutY="289.0" prefHeight="33.0" prefWidth="253.0" promptText="facultatif" style="-fx-background-radius: 5;">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </TextField>
+                <Button layoutX="280.0" layoutY="342.0" mnemonicParsing="false" onAction="#siSuivant" style="-fx-background-color: #4c75e6; -fx-background-radius: 10;" text="Suivant" textFill="WHITE">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+                <Button layoutX="100.0" layoutY="342.0" mnemonicParsing="false" onAction="#siAnnuler" style="-fx-background-color: #4c75e6; -fx-background-radius: 10;" text="Annuler" textFill="WHITE">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+                <Label layoutX="7.0" layoutY="2.0" prefHeight="58.0" prefWidth="282.0" style="-fx-font-style: italic;" text="Inscrivez-Vous !">
+                    <font>
+                        <Font size="40.0" />
+                    </font>
+                </Label>
+                <Label layoutX="7.0" layoutY="223.0" prefHeight="33.0" prefWidth="70.0" text="Ville :" wrapText="true">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="villeField" layoutX="214.0" layoutY="223.0" prefHeight="33.0" prefWidth="253.0" style="-fx-background-radius: 5;">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </TextField>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="480.0" prefHeight="400.0" prefWidth="219.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="301.0" fitWidth="219.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="@Images/DAKblanc.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="301.0" fitWidth="219.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="0.0">
+               <image>
+                  <Image url="@Images/illustration.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+    </children>
+</AnchorPane>

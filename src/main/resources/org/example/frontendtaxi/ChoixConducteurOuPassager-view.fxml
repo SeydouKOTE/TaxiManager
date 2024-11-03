@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="440.0" prefWidth="700.0" style="-fx-background-color: #77B5FE;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.frontendtaxi.ChoixConducteurOuPassagerController">
+   <children>
+      <AnchorPane prefHeight="106.0" prefWidth="600.0">
+         <children>
+            <Label alignment="CENTER" layoutX="-1.0" layoutY="-3.0" prefHeight="106.0" prefWidth="600.0" text="Bienvenue sur My Taxi Driver !" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold Italic" size="40.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="14.0" layoutY="117.0" prefHeight="296.0" prefWidth="359.0">
+         <children>
+            <Button fx:id="choixConducteur" alignment="CENTER" layoutX="76.0" layoutY="101.0" mnemonicParsing="false" onAction="#siChoixConducteur" prefHeight="56.0" prefWidth="208.0" style="-fx-background-color: #5883d2;" text="Conducteur" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="choixPassager" alignment="CENTER" layoutX="76.0" layoutY="185.0" mnemonicParsing="false" onAction="#siChoixPassager" prefHeight="56.0" prefWidth="208.0" style="-fx-background-color: #5883d2;" text="Passager" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="30.0" />
+               </font>
+            </Button>
+            <Label layoutX="20.0" prefHeight="45.0" prefWidth="294.0" text="Vous êtes conducteur">
+               <font>
+                  <Font name="System Italic" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="31.0" layoutY="39.0" prefHeight="45.0" prefWidth="194.0" text="ou passager ?">
+               <font>
+                  <Font name="System Italic" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="349.0" fitWidth="369.0" layoutX="337.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/DAK.png" />
+         </image></ImageView>
+   </children>
+</AnchorPane>

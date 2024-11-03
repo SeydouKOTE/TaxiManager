@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.frontendtaxi.ConnectionAdminController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="471.0" style="-fx-background-color: #77B5FE;">
+          <children>
+              <Pane cache="true" layoutX="15.0" layoutY="111.0" prefHeight="199.0" prefWidth="441.0" style="-fx-background-color: FFFFFF;" AnchorPane.bottomAnchor="90.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="111.0">
+                  <children>
+                      <Label contentDisplay="RIGHT" layoutX="14.0" layoutY="42.0" prefHeight="48.0" prefWidth="176.0" text="Nom d'utilisateur :">
+                          <font>
+                              <Font size="20.0" />
+                          </font>
+                          <effect>
+                              <ColorAdjust />
+                          </effect>
+                      </Label>
+                      <TextField fx:id="usernameField" layoutX="190.0" layoutY="47.0" prefHeight="39.0" prefWidth="216.0" promptText="username">
+                     <font>
+                        <Font size="18.0" />
+                     </font></TextField>
+                      <Label layoutX="9.0" layoutY="100.0" prefHeight="25.0" prefWidth="159.0" text="Mot de passe : ">
+                          <font>
+                              <Font size="20.0" />
+                          </font>
+                      </Label>
+                      <PasswordField fx:id="passwordField" layoutX="190.0" layoutY="97.0" prefHeight="39.0" prefWidth="216.0" promptText="passeword">
+                     <font>
+                        <Font size="18.0" />
+                     </font></PasswordField>
+                      <Button layoutX="146.0" layoutY="141.0" mnemonicParsing="false" onAction="#handleLoginButtonAction" prefHeight="30.0" prefWidth="149.0" style="-fx-background-color: #77B5FE; -fx-background-radius: 15;" text="Seconnecter" textFill="WHITE">
+                          <font>
+                              <Font size="20.0" />
+                          </font>
+                      </Button>
+
+                      <Label alignment="CENTER" layoutX="15.0" layoutY="6.0" lineSpacing="100.0" prefHeight="37.0" prefWidth="350.0" text="Identifiez vous !">
+                          <font>
+                              <Font size="29.0" />
+                          </font>
+                          <opaqueInsets>
+                              <Insets />
+                          </opaqueInsets>
+                      </Label>
+                  </children>
+            </Pane>
+          </children>
+      </AnchorPane>
+      <AnchorPane layoutX="471.0" prefHeight="400.0" prefWidth="229.0" style="-fx-background-image: white;">
+         <children>
+            <ImageView fitHeight="229.0" fitWidth="236.0" layoutX="-7.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="@Images/DAKblanc.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="229.0" fitWidth="236.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <image>
+                  <Image url="@Images/illustration.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

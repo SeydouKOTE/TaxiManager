@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" style="-fx-border-color: black; -fx-border-width: 2px;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.frontendtaxi.MenuPassagerController">
+    <children>
+        <AnchorPane prefHeight="57.0" prefWidth="700.0" style="-fx-background-color: #77B5FE;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <ImageView fx:id="menu" fitHeight="47.0" fitWidth="47.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <image>
+                        <Image url="@Images/Menu.png" />
+                    </image>
+                </ImageView>
+            <ImageView fx:id="logo" fitHeight="47.0" fitWidth="284.0" layoutX="597.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="33.44000244140625" AnchorPane.topAnchor="5.0">
+               <image>
+                  <Image url="@Images/DAKpetit.png" />
+               </image>
+            </ImageView>
+            </children></AnchorPane>
+      <BorderPane fx:id="menuBorderPane" layoutY="57.0" prefHeight="337.0" prefWidth="693.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="57.0">
+         <left>
+              <AnchorPane prefHeight="352.0" prefWidth="52.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+                  <children>
+                      <VBox alignment="TOP_CENTER" layoutX="-12.0" prefHeight="360.0" prefWidth="52.0" spacing="15.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <children>
+                              <ImageView fitHeight="46.0" fitWidth="32.0" onMouseClicked="#onAccueilButtonClick" pickOnBounds="true" preserveRatio="true">
+                                  <image>
+                                      <Image url="@Images/Home1.png" />
+                                  </image>
+                              </ImageView>
+                              <ImageView fitHeight="46.0" fitWidth="32.0" layoutX="20.0" layoutY="148.0" onMouseClicked="#onProfilButtonClick" pickOnBounds="true" preserveRatio="true">
+                                  <image>
+                                      <Image url="@Images/Profile.png" />
+                                  </image>
+                              </ImageView>
+                              <ImageView fitHeight="46.0" fitWidth="32.0" layoutX="20.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                                  <image>
+                                      <Image url="@Images/Changer.png" />
+                                  </image>
+                              </ImageView>
+                              <ImageView fitHeight="46.0" fitWidth="32.0" layoutX="20.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                                  <image>
+                                      <Image url="@Images/Manager.png" />
+                                  </image>
+                              </ImageView>
+                              <ImageView fitHeight="46.0" fitWidth="32.0" layoutX="20.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+                                  <image>
+                                      <Image url="@Images/AboutUs.png" />
+                                  </image>
+                              </ImageView>
+                              <ImageView fitHeight="46.0" fitWidth="32.0" layoutX="20.0" layoutY="185.0" onMouseClicked="#onQuitterButtonClick" pickOnBounds="true" preserveRatio="true">
+                                  <image>
+                                      <Image url="@Images/Exit.png" />
+                                  </image>
+                              </ImageView>
+                          </children>
+                      </VBox>
+                  </children>
+              </AnchorPane>
+         </left>
+         <center>
+         </center>
+      </BorderPane>
+        <AnchorPane fx:id="pane1" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+        <AnchorPane fx:id="pane2" layoutX="51.0" layoutY="34.0" prefHeight="343.0" prefWidth="146.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="51.0" AnchorPane.topAnchor="57.0">
+            <children>
+                <VBox layoutX="-7.0" layoutY="38.0" prefHeight="343.0" prefWidth="146.0" spacing="5.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                        <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#onAccueilButtonClick" prefHeight="38.0" prefWidth="179.0" text="Accueil">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </Button>
+                        <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#onProfilButtonClick" prefHeight="38.0" prefWidth="179.0" text="Profil">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="ChangeLeMode" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#onChangeLeModeButtonClick" prefHeight="38.0" prefWidth="179.0" text="Changer le Mode">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </Button>
+                        <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="53.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="179.0" text="Gestion Systeme">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </Button>
+                        <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="97.0" mnemonicParsing="false" onAction="#onAProposDeNousButtonClick" prefHeight="38.0" prefWidth="179.0" text="A propos de nous">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </Button>
+                        <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="140.0" mnemonicParsing="false" onAction="#onQuitterButtonClick" prefHeight="38.0" prefWidth="179.0" text="Quitter">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </Button>
+                        <AnchorPane prefHeight="92.0" prefWidth="178.0">
+                            <children>
+                                <ImageView fx:id="profil" fitHeight="47.0" fitWidth="69.0" layoutX="39.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/Profile.png" />
+                           </image>
+                                </ImageView>
+                                <Label fx:id="userId" alignment="CENTER" layoutX="11.0" layoutY="46.0" prefHeight="38.0" prefWidth="122.0" style="-fx-background-color: white;" text="User Id " textAlignment="CENTER">
+                                    <font>
+                                        <Font name="System Bold Italic" size="16.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </VBox>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

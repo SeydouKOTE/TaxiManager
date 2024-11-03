@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.frontendtaxi.ProfilPassagerController">
+    <children>
+        <AnchorPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label alignment="CENTER" layoutX="40.0" layoutY="211.0" prefHeight="33.0" prefWidth="228.0" text="Nom d'utilisateur:" wrapText="true">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <Label fx:id="usernameLabel" layoutX="252.0" layoutY="211.0" prefHeight="33.0" prefWidth="200.0" style="-fx-background-radius: 5;">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutX="44.0" layoutY="261.0" prefHeight="33.0" prefWidth="193.0" text="Ville :" wrapText="true">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <Label fx:id="villeLabel" layoutX="252.0" layoutY="261.0" prefHeight="33.0" prefWidth="200.0" style="-fx-background-radius: 5;">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Button fx:id="choisirPhotoButton" layoutX="320.0" layoutY="130.0" mnemonicParsing="false" onAction="#handleChoisirPhoto" style="-fx-background-color: #4c75e6; -fx-background-radius: 10;" text="Choisir Photo" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+                 <ImageView fx:id="profileImageView" fitHeight="150.0" fitWidth="150.0" layoutX="136.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                         <Image url="@Images/Profile.png" />
+                     </image>
+                 </ImageView>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

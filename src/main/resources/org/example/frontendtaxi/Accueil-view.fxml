@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="accueil" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.frontendtaxi.AccueilController">
+   <children>
+      <AnchorPane layoutY="-117.0" onMouseClicked="#onDragEntrer" style="-fx-background-color: #77B5FE;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="97.0" layoutY="25.0" prefHeight="117.0" prefWidth="526.0" text="My Taxi Driver">
+               <font>
+                  <Font name="System Bold Italic" size="72.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="87.0" fitWidth="463.0" layoutY="292.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+               <image>
+                  <Image url="@Images/route.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="53.0" fitWidth="590.0" layoutX="231.0" layoutY="298.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <image>
+                  <Image url="@Images/route.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="logoTAxi1" fitHeight="181.0" fitWidth="230.0" layoutY="171.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="50.0">
+               <image>
+                  <Image url="@Images/VoitureBleu.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="logoTAxi11" fitHeight="171.0" fitWidth="216.0" layoutX="232.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="50.0">
+               <image>
+                  <Image url="@Images/VoitureBleu.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="logoTAxi111" fitHeight="188.0" fitWidth="230.0" layoutX="448.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="50.0">
+               <image>
+                  <Image url="@Images/VoitureBleu.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="252.0" layoutY="125.0" prefHeight="87.0" prefWidth="203.0" text=" DAK PROD" textFill="#06530c">
+               <font>
+                  <Font name="System Bold Italic" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="103.0" layoutY="200.0" prefHeight="45.0" prefWidth="479.0" text="Pour votre confort et votre sécurité !">
+               <font>
+                  <Font name="System Italic" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

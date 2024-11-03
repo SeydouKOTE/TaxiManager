@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.dlsc.gmapsfx.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.web.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.frontendtaxi.MapPassagerController">
+    <children>
+        <GoogleMapView fx:id="mapView" prefHeight="344.0" prefWidth="628.0" AnchorPane.bottomAnchor="76.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0" />
+        <Button fx:id="chercherUnConducteurButton" layoutX="60.0" layoutY="413.0" mnemonicParsing="false" onAction="#onSearchDriverClick" text="Chercher un conducteur" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="60.0" />
+      <AnchorPane fx:id="discution" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+          <VBox layoutX="181.0" spacing="10" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <WebView fx:id="messageArea" minHeight="-1.0" minWidth="-1.0" prefHeight="270.0" prefWidth="341.0" VBox.vgrow="ALWAYS" />
+              <TextField fx:id="inputField" />
+              <HBox spacing="40.0">
+                  <Button onAction="#sendMessage" text="Envoyer" />
+                  <Button onAction="#sendImage" text="Envoyer une image" />
+              </HBox>
+          </VBox>
+      </AnchorPane>
+      <ImageView fx:id="ouvrirOufermer" fitHeight="69.0" fitWidth="35.0" onMouseClicked="#handleouvrirOufermerClick" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="249.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="150.0">
+         <image>
+            <Image url="@Images/flecheDroite.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

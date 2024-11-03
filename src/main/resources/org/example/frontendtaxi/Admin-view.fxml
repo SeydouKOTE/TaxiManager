@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.frontendtaxi.AdminController">
+    <top>
+        <Label text="Gestion des Conducteurs et Passagers" style="-fx-font-size: 24;" BorderPane.alignment="CENTER"/>
+    </top>
+    <center>
+        <SplitPane orientation="VERTICAL">
+            <items>
+                <VBox spacing="10">
+                    <padding>
+                        <Insets top="10" right="10" bottom="10" left="10"/>
+                    </padding>
+                    <children>
+                        <Label text="Conducteurs" style="-fx-font-size: 18;" />
+                        <TableView fx:id="conducteursTable">
+                            <columns>
+                                <TableColumn fx:id="conducteurNomColumn" text="Nom" />
+                                <TableColumn fx:id="conducteurPrenomColumn" text="Prénom" />
+                                <TableColumn fx:id="conducteurTelephoneColumn" text="Téléphone" />
+                                <TableColumn fx:id="conducteurVilleColumn" text="Ville" />
+                                <TableColumn fx:id="conducteurEmailColumn" text="Email" />
+                            </columns>
+                        </TableView>
+                        <HBox spacing="10">
+                            <Button text="Rafraîchir" onAction="#handleRafraîchir"/>
+                            <Button text="Modifier" onAction="#handleEditConducteur"/>
+                            <Button text="Supprimer" onAction="#handleDeleteConducteur"/>
+                        </HBox>
+                    </children>
+                </VBox>
+                <VBox spacing="10">
+                    <padding>
+                        <Insets top="10" right="10" bottom="10" left="10"/>
+                    </padding>
+                    <children>
+                        <Label text="Passagers" style="-fx-font-size: 18;" />
+                        <TableView fx:id="passagersTable">
+                            <columns>
+                                <TableColumn fx:id="passagerNomColumn" text="Nom" />
+                                <TableColumn fx:id="passagerPrenomColumn" text="Prénom" />
+                                <TableColumn fx:id="passagerTelephoneColumn" text="Téléphone" />
+                                <TableColumn fx:id="passagerVilleColumn" text="Ville" />
+                                <TableColumn fx:id="passagerEmailColumn" text="Email" />
+                            </columns>
+                        </TableView>
+                        <HBox spacing="10">
+                            <Button text="Rafraîchir" onAction="#handleRafraîchir"/>
+                            <Button text="Modifier" onAction="#handleEditPassager"/>
+                            <Button text="Supprimer" onAction="#handleDeletePassager"/>
+                        </HBox>
+                    </children>
+                </VBox>
+            </items>
+        </SplitPane>
+    </center>
+</BorderPane>

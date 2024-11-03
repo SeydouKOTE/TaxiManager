@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.frontendtaxi.ProfilConducteurController">
+    <children>
+        <AnchorPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label alignment="CENTER" layoutX="68.0" layoutY="183.0" prefHeight="33.0" prefWidth="228.0" text="Nom d'utilisateur:" wrapText="true">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <Label fx:id="usernameLabel" layoutX="268.0" layoutY="183.0" prefHeight="33.0" prefWidth="200.0" style="-fx-background-radius: 5;">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutX="68.0" layoutY="227.0" prefHeight="33.0" prefWidth="193.0" text="Ville :" wrapText="true">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <Label fx:id="villeLabel" layoutX="268.0" layoutY="227.0" prefHeight="33.0" prefWidth="200.0" style="-fx-background-radius: 5;">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <StackPane layoutX="140.0" layoutY="14.0" prefHeight="150.0" prefWidth="150.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0">
+                    <ImageView fx:id="profileImageView" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@Images/Profile.png" />
+                        </image>
+                    </ImageView>
+                </StackPane>
+                <Button fx:id="choisirPhotoButton" layoutX="320.0" layoutY="130.0" mnemonicParsing="false" onAction="#handleChoisirPhoto" style="-fx-background-color: #4c75e6; -fx-background-radius: 10;" text="Choisir Photo" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+                <Label alignment="CENTER" layoutX="14.0" layoutY="253.0" prefHeight="33.0" prefWidth="193.0" text="Date de debut  :" wrapText="true">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutX="229.0" layoutY="253.0" prefHeight="33.0" prefWidth="193.0" text="Date de fin  :" wrapText="true">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <Label fx:id="dateDebut" alignment="CENTER" layoutX="14.0" layoutY="286.0" prefHeight="33.0" prefWidth="193.0" text="date" wrapText="true">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <Label fx:id="dateFin" alignment="CENTER" layoutX="240.0" layoutY="286.0" prefHeight="33.0" prefWidth="193.0" text="Date de debut  :" wrapText="true">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

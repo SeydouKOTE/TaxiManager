@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.frontendtaxi.AProposDeNousController">
+   <children>
+      <ScrollPane fitToWidth="true" fitToHeight="true" AnchorPane.topAnchor="0" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0">
+         <content>
+            <VBox spacing="20" alignment="CENTER" style="-fx-padding: 20;">
+               <VBox alignment="CENTER" spacing="10">
+                  <Label text="À propos de nous" style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+                  <TextFlow fx:id="aboutUsTextFlow"/>
+               </VBox>
+
+               <VBox spacing="10">
+                  <Label text="Notre mission" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+                  <TextFlow fx:id="missionTextFlow"/>
+               </VBox>
+
+               <VBox spacing="10">
+                  <Label text="Fonctionnalités clés" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+                  <TextFlow fx:id="featuresTextFlow"/>
+               </VBox>
+
+               <VBox spacing="10">
+                  <Label text="Notre équipe" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+                  <HBox alignment="CENTER" spacing="20">
+                     <VBox alignment="CENTER">
+                        <ImageView fx:id="author1Image" fitWidth="100" fitHeight="100"/>
+                        <Label text="Auteur 1" fx:id="author1Name"/>
+                     </VBox>
+                     <VBox alignment="CENTER">
+                        <ImageView fx:id="author2Image" fitWidth="100" fitHeight="100"/>
+                        <Label text="Auteur 2" fx:id="author2Name"/>
+                     </VBox>
+                     <VBox alignment="CENTER">
+                        <ImageView fx:id="author3Image" fitWidth="100" fitHeight="100"/>
+                        <Label text="Auteur 3" fx:id="author3Name"/>
+                     </VBox>
+                  </HBox>
+               </VBox>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
